@@ -1,13 +1,13 @@
-# ubuntu12.04-ruby2.1.2-bundler1.6.4 box
+# Ubuntu + Ruby + Bundler
 
-An ubuntu box containing Ruby 2.1.2 and Bundler 1.6.4
+An Ubuntu box containing Ruby and Bundler.
 
 # License
 
-The MIT License (MIT)
+See LICENSE.
 
 # Changelog
 
 ## 0.0.1
 
-- Initial release
+- Initial release with Ruby 2.1.5 & Bundler 1.7.6
