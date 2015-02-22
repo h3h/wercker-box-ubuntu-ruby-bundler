@@ -1,18 +1,18 @@
-name: ubuntu12.04-ruby2.1.5-bundler1.7.6
+name: ubuntu12.04-ruby2.2.0-bundler1.8.2
 version: 0.0.1
 inherits: wercker/ubuntu12.04-webessentials@1.0.4
 type: main
 platform: ubuntu@12.04
 keywords:
   - ruby
-  - ruby2.1.5
+  - ruby2.2.0
   - bundler
 packages:
   - ruby@2.1.6
-  - bundler@1.7.6
+  - bundler@1.8.2
 script: |
-  export RUBYVERSION=2.1.5
-  export BUNDLERVERSION=1.7.6
+  export RUBYVERSION=2.2.0
+  export BUNDLERVERSION=1.8.2
   sudo apt-get update
   sudo apt-get install git zlib1g-dev libreadline-dev libqtwebkit-dev
   sudo apt-get remove ruby1.9.1
@@ -39,7 +39,7 @@ box-detect:
   version :
   detect:
     - inFiles:
-      - Gemfile : ruby "2.1.5"
+      - Gemfile : ruby "2.2.0"
 
 default-build:
   ruby-on-rails:
