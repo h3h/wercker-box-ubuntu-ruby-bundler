@@ -1,20 +1,21 @@
-name: ubuntu12.04-ruby2.2.0-bundler1.8.2
+name: ubuntu14.04-ruby2.2.2-bundler1.10.3-libqt5webkit5
 version: 0.0.1
 inherits: wercker/ubuntu12.04-webessentials@1.0.4
 type: main
-platform: ubuntu@12.04
+platform: ubuntu@14.04
 keywords:
   - ruby
-  - ruby2.2.0
+  - ruby2.2.2
   - bundler
+  - libqt5webkit5
 packages:
-  - ruby@2.1.6
-  - bundler@1.8.2
+  - ruby@2.2.2
+  - bundler@1.10.3
 script: |
-  export RUBYVERSION=2.2.0
-  export BUNDLERVERSION=1.8.2
+  export RUBYVERSION=2.2.2
+  export BUNDLERVERSION=1.10.3
   sudo apt-get update
-  sudo apt-get install git zlib1g-dev libreadline-dev libqtwebkit-dev
+  sudo apt-get install git zlib1g-dev libreadline-dev libqt5webkit5-dev
   sudo apt-get remove ruby1.9.1
   cd $HOME
   mkdir rubyinstall
@@ -39,7 +40,7 @@ box-detect:
   version :
   detect:
     - inFiles:
-      - Gemfile : ruby "2.2.0"
+      - Gemfile : ruby "2.2.2"
 
 default-build:
   ruby-on-rails:
