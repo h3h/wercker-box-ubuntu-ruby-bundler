@@ -15,7 +15,7 @@ script: |
   export RUBYVERSION=2.2.2
   export BUNDLERVERSION=1.10.3
   sudo apt-get update
-  sudo apt-get install git zlib1g-dev libreadline-dev libqt5webkit5-dev
+  sudo apt-get install git openssl zlib1g-dev libreadline-dev libqt5webkit5-dev
   cd $HOME
   mkdir rubyinstall
   cd rubyinstall
